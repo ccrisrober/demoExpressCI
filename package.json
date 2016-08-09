@@ -1,0 +1,30 @@
+{
+  "name": "demoexpressci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "should": "^10.0.0",
+    "express": "^4.14.0",
+    "supertest": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maldicion069/demoExpressCI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maldicion069/demoExpressCI/issues"
+  },
+  "homepage": "https://github.com/maldicion069/demoExpressCI#readme"
+}
