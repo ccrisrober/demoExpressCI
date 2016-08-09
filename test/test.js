@@ -11,6 +11,7 @@ describe("SAMPLE UNIT TEST", function() {
 			.expect(200)
 			.end(function(err, res) {
 				res.status.should.equal(200);
+				
 				var data = res.body.data;
 				data.should.equal("ok");
 				done();
