@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml"
   },
   "dependencies": {
     "express": "^4.14.0",
