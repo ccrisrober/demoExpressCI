@@ -1,7 +1,9 @@
 # demoExpressCI
+
 ## Plugins
 - Github
 - NodeJS
+
 ## Bash script
 ```bash
 npm install 
