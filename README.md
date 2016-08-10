@@ -1,8 +1,8 @@
 # demoExpressCI
 
 ## Plugins
-- Github
-- NodeJS
+- Github Plugin
+- NodeJS Plugin
 
 ## Bash script
 ```bash
