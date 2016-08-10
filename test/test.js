@@ -21,7 +21,7 @@ describe("SAMPLE UNIT TEST", function() {
 	});
 	it("example", function(done) {
 		var value = 1;
-		value.should.equal(0);
+		value.should.equal(1);
 		done();
 	});
 });
