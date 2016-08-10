@@ -1,6 +1,8 @@
 var supertest = require("supertest");
 var should = require("should");
 
+require("../index");
+
 var server = supertest.agent("http://localhost:3000");
 
 describe("SAMPLE UNIT TEST", function() {
