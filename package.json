@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml"
+    "test": "test"
   },
   "dependencies": {
     "express": "^4.14.0",
@@ -12,12 +12,14 @@
     "supertest": "^2.0.0"
   },
   "devDependencies": {
+    "eslint": "^3.2.2",
     "mocha": "^3.0.2",
     "should": "^10.0.0",
     "supertest": "^2.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml",
+    "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml"
   },
   "repository": {
     "type": "git",
