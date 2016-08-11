@@ -14,14 +14,17 @@
   "devDependencies": {
     "eslint": "^3.2.2",
     "istanbul": "^0.4.4",
+    "jshint": "^2.9.2",
     "mocha": "^3.0.2",
     "should": "^10.0.0",
     "supertest": "^2.0.0",
     "tape": "^4.6.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml",
-    "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R tap ./test/*-test.js",
+    "jenkins-test": "istanbul cover node_modules/mocha/bin/_mocha -- -R tap > test.tap && istanbul report clover",
+    "coverage": "jshint --reporter=checkstyle demo.js",
+    "jekins-coverage": "jshint --reporter=checkstyle demo.js > checkstyle.xml"
   },
   "repository": {
     "type": "git",
